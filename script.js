@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const box = document.querySelector('.content-box');
-    box.style.opacity = '0';
-    box.style.transition = 'opacity 1.5s ease-in, transform 1.5s ease-out';
-    box.style.transform = 'translateY(20px)';
-    
-    // Yumuşak giriş animasyonu
-    setTimeout(() => {
-        box.style.opacity = '1';
-        box.style.transform = 'translateY(0)';
-    }, 100);
+// Basit bir "arama" simülasyonu
+const statusText = document.getElementById('status');
+let count = 0;
 
-    console.log("Cold Works Production: 7CoD System Ready.");
-});
+setInterval(() => {
+    // Yazıyı periyodik olarak gizleyip göstererek yanıp sönme efekti veriyoruz
+    if(count % 2 === 0) statusText.style.visibility = 'hidden';
+    else statusText.style.visibility = 'visible';
+    count++;
+}, 3000);
+
+console.log("Kaset yükleniyor... Sistem hazır.");
