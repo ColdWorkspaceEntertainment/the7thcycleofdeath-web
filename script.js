@@ -9,4 +9,4 @@ setInterval(() => {
     count++;
 }, 3000);
 
-console.log("Kaset yükleniyor... Sistem hazır.");
+console.log("Hazırlıklar yükleniyor... Sistem hazır.");
