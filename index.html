@@ -2,24 +2,151 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>STANDBY | The 7th Cycle of Death</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 7th Cycle of Death</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://imgur.com/rswCKcD.png">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="tv-screen"></div>
-    <div class="scanlines"></div>
-    
-    <div class="box">
-        <h1 id="status">1. BÖLÜM YAKLAŞIYOR</h1>
-        <p>The 7th Cycle of Death - 1. Bölüm Bekleniyor</p>
-        
-        <a href="https://coldworksproduction.com" class="btn-home">BACK TO MAIN STAGE</a>
 
-        <p class="license">
-            The 7th Cycle of Death © 2026 by Cold Works Production is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
-        </p>
+    <!-- Üst Menü & Dil Seçimi -->
+    <header class="navbar">
+        <div class="logo">🌸 The 7th Cycle of Death 🌸</div>
+        <div class="lang-switch">
+            <button id="btn-tr" class="active" onclick="changeLanguage('tr')">TR</button>
+            <button id="btn-en" onclick="changeLanguage('en')">EN</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sol Bölüm Listesi -->
+        <aside class="sidebar">
+            <h3 data-tr="Bölümler" data-en="Chapters">Bölümler</h3>
+            <ul>
+                <li>
+                    <button class="chapter-btn active" onclick="showChapter(1)" id="btn-ch1">
+                        <span data-tr="Bölüm 1: Sadakat" data-en="Chapter 1: Loyalty">Bölüm 1: Sadakat</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="chapter-btn" onclick="showChapter(2)" id="btn-ch2">
+                        <span data-tr="Bölüm 2 (Çok Yakında)" data-en="Chapter 2 (Coming Soon)">Bölüm 2 (Çok Yakında)</span>
+                    </button>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Sağ İçerik Alanı -->
+        <main class="content-area">
+            
+            <!-- BÖLÜM 1 -->
+            <article id="chapter-1" class="chapter-content">
+                <h1 data-tr="1. Bölüm: Sadakat" data-en="Chapter 1: Loyalty">1. Bölüm: Sadakat</h1>
+                <div class="story-text">
+                    
+                    <p class="sound-effect" data-tr="(Telefon Alarmı)" data-en="(Phone Alarm)">(Telefon Alarmı)</p>
+                    <p><strong>Abby:</strong> <span data-tr="ahhh, Sabah oldu mu?" data-en="ahhh, Is it morning already?">ahhh, Sabah oldu mu?</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="evet Abby çoktan sabah oldu, ayrıca bi zahmet uyan artık" data-en="yes Abby it's already morning, and please bother to wake up now">evet Abby çoktan sabah oldu, ayrıca bi zahmet uyan artık</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="aaa, Abby bu saatte uyanılır mı, gel biraz öpeyim tatlım" data-en="aaa, Abby why wake up at this hour, come let me kiss you sweetie">aaa, Abby bu saatte uyanılır mı, gel biraz öpeyim tatlım</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="mhhmm, tamam" data-en="mhhmm, okay">mhhmm, tamam</span></p>
+                    
+                    <p class="narrative" data-tr="(Riley, Abby'yi öper ve kahvaltıya geçerler)" data-en="(Riley kisses Abby and they go for breakfast)">(Riley, Abby'yi öper ve kahvaltıya geçerler)</p>
+
+                    <p><strong>Lucia:</strong> <span data-tr="kahvaltı hazır." data-en="breakfast is ready.">kahvaltı hazır.</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="türkmen mantısı mı? bayılırım" data-en="turkmen manti? I love it">türkmen mantısı mı? bayılırım</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="o ne ki?" data-en="what is that?">o ne ki?</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="çok güzel, denemek ister misin bebeğim" data-en="it's very good, do you want to try it baby">çok güzel, denemek ister misin bebeğim</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="eee, tamam :3" data-en="eee, okay :3">eee, tamam :3</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="bide bir şey sorucam" data-en="also I wanna ask something">bide bir şey sorucam</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="ne öyle öpüşme falan, iğrenç" data-en="what's with the kissing and all, gross">ne öyle öpüşme falan, iğrenç</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="sana ne istediğimizi yaparız..." data-en="none of your business, we do what we want...">sana ne istediğimizi yaparız...</span></p>
+
+                    <p class="narrative" data-tr="(kahvaltı biter ve film izlemeye geçerler)" data-en="(breakfast ends and they move to watch a movie)">(kahvaltı biter ve film izlemeye geçerler)</p>
+
+                    <p><strong>Abby:</strong> <span data-tr="ne izleyelim?" data-en="what should we watch?">ne izleyelim?</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="bana sorma ne bileyim ben.." data-en="don't ask me, how would I know..">bana sorma ne bileyim ben..</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="dizi izlesek yani aklıma ####### falan geliyor" data-en="what if we watch a show, like ####### comes to mind">dizi izlesek yani aklıma ####### falan geliyor</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="olabilir aslında...." data-en="could be actually....">olabilir aslında....</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="tamam açıyorum o zaman" data-en="okay I'm putting it on then">tamam açıyorum o zaman</span></p>
+
+                    <p class="narrative" data-tr="(2. sezona kadar diziyi izlerler)" data-en="(they watch the show until season 2)">(2. sezona kadar diziyi izlerler)</p>
+
+                    <p><strong>Riley:</strong> <span data-tr="dizi güzeldi ya ama sanki biraz sıkıcıydı" data-en="the show was nice but it felt a bit boring">dizi güzeldi ya ama sanki biraz sıkıcıydı</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="Abby su alıcam mutfaktan sende ister misin" data-en="Abby I'll get water from the kitchen, do you want some too">Abby su alıcam mutfaktan sende ister misin</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="Abby?" data-en="Abby?">Abby?</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="Zzz……" data-en="Zzz……">Zzz……</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="hmmmm, noldu?" data-en="hmmmm, what happened?">hmmmm, noldu?</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="gerçekten nasıl uyumayı başardın, tamam sıkıcıydı ama o kadarda değildi yani?" data-en="how did you really manage to sleep, okay it was boring but not that much?">gerçekten nasıl uyumayı başardın, tamam sıkıcıydı ama o kadarda değildi yani?</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="üzgünüm sadece uykum var :c" data-en="sorry I'm just sleepy :c">üzgünüm sadece uykum var :c</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="sorun değil tatlım :3" data-en="no problem sweetie :3">sorun değil tatlım :3</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="seni seviyorum" data-en="I love you">seni seviyorum</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="bende seni bebeğim" data-en="I love you too baby">bende seni bebeğim</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="bu arada Lucia nerede" data-en="by the way where is Lucia">bu arada Lucia nerede</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="sen uyurken dışarı çıktı, gezmeye falan işte :/" data-en="she went out while you were sleeping, just hanging out :/">sen uyurken dışarı çıktı, gezmeye falan işte :/</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="anladım, neyse waffle yemeye gidelim mi?" data-en="I see, anyway shall we go eat waffles?">anladım, neyse waffle yemeye gidelim mi?</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="tabiki olur" data-en="of course, sure">tabiki olur</span></p>
+
+                    <p class="narrative" data-tr="(waffle restoranına giderler)" data-en="(they go to the waffle restaurant)">(waffle restoranına giderler)</p>
+
+                    <p><strong>Abby:</strong> <span data-tr="ne yiyelim balım" data-en="what should we eat honey">ne yiyelim balım</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="bekle garson çağırayım" data-en="wait let me call the waiter">bekle garson çağırayım</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="bakar mısınız?" data-en="excuse me?">bakar mısınız?</span></p>
+                    <p><strong>Loki:</strong> <span data-tr="buyurun efendim, ne yemek istersiniz" data-en="yes sir/ma'am, what would you like to have">buyurun efendim, ne yemek istersiniz</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="ben mint waffle alayım" data-en="I'll take mint waffle">ben mint waffle alayım</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="Abby sen ne istiyorsun" data-en="Abby what do you want">Abby sen ne istiyorsun</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="çikolatalı alayım bende" data-en="I'll take chocolate too">çikolatalı alayım bende</span></p>
+                    <p><strong>Loki:</strong> <span data-tr="tamamdır efendim, hemen getiriyorum" data-en="alright then, bringing it right away">tamamdır efendim, hemen getiriyorum</span></p>
+
+                    <p class="narrative" data-tr="(sipariş gelir...)" data-en="(order arrives...)">(sipariş gelir...)</p>
+
+                    <p><strong>Riley:</strong> <span data-tr="teşekkür ederiz" data-en="thank you">teşekkür ederiz</span></p>
+                    <p><strong>Loki:</strong> <span data-tr="rica ederim efendim, afiyet olsun" data-en="you're welcome, enjoy your meal">rica ederim efendim, afiyet olsun</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="güzel gözüküyor..." data-en="looks nice...">güzel gözüküyor...</span></p>
+
+                    <p class="narrative" data-tr="(yiyip bitirirler)" data-en="(they finish eating)">(yiyip bitirirler)</p>
+
+                    <p><strong>Abby:</strong> <span data-tr="waffle pek güzel değildi sanki tatlım :|" data-en="waffle wasn't really good sweetie :|">waffle pek güzel değildi sanki tatlım :|</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="bilmiyorum bende pek beğenemedim..." data-en="I don't know, I didn't like it much either...">bilmiyorum bende pek beğenemedim...</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="eve gidelim mi?" data-en="shall we go home?">eve gidelim mi?</span></p>
+                    <p><strong>Abby:</strong> <span data-tr="olur bebeğim :3" data-en="sure baby :3">olur bebeğim :3</span></p>
+
+                    <p class="narrative" data-tr="(eve giderler ve akşam olur)" data-en="(they go home and it becomes evening)">(eve giderler ve akşam olur)</p>
+
+                    <p><strong>Abby:</strong> <span data-tr="Riley, ben uyuyacağım çok uykum var..." data-en="Riley, I'm going to sleep I'm very sleepy...">Riley, ben uyuyacağım çok uykum var...</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="tamam tatlım iyi geceler :3" data-en="okay sweetie good night :3">tamam tatlım iyi geceler :3</span></p>
+
+                    <p class="narrative" data-tr="(Abby uyumaya gider ve Lucia eve gelir)" data-en="(Abby goes to sleep and Lucia comes home)">(Abby uyumaya gider ve Lucia eve gelir)</p>
+                    <p class="sound-effect" data-tr="(Zil Sesi...)" data-en="(Doorbell...)">(Zil Sesi...)</p>
+
+                    <p><strong>Riley:</strong> <span data-tr="geliyorum" data-en="coming">geliyorum</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="sonunda eve gelebildim varya dışarısı o kadar sıcak ki" data-en="finally made it home, it's so hot outside">sonunda eve gelebildim varya dışarısı o kadar sıcak ki</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="biliyorum hava sıcak" data-en="I know, weather is hot">biliyorum hava sıcak</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="Abby nerede?" data-en="where is Abby?">Abby nerede?</span></p>
+                    <p><strong>Riley:</strong> <span data-tr="yatmaya gitti bende yatacağım şimdi" data-en="she went to sleep, I'm going to sleep now too">yatmaya gitti bende yatacağım şimdi</span></p>
+                    <p><strong>Lucia:</strong> <span data-tr="tamam iyi geceler." data-en="okay good night.">tamam iyi geceler.</span></p>
+
+                    <div class="chapter-end" data-tr="1. Bölüm Sonu" data-en="End of Chapter 1">1. Bölüm Sonu</div>
+                </div>
+            </article>
+
+            <!-- BÖLÜM 2 (COMING SOON) -->
+            <article id="chapter-2" class="chapter-content hidden">
+                <h1 data-tr="2. Bölüm" data-en="Chapter 2">2. Bölüm</h1>
+                <div class="coming-soon-box">
+                    <div class="sparkle">✨ 🐾 ✨</div>
+                    <h2>COMING SOON</h2>
+                    <p data-tr="Bu bölüm henüz hazır değil, çok yakında gelecekle takipte kalın!" 
+                       data-en="This chapter is not ready yet, coming very soon stay tuned!">
+                        Bu bölüm henüz hazır değil, çok yakında gelecekle takipte kalın!
+                    </p>
+                </div>
+            </article>
+
+        </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
