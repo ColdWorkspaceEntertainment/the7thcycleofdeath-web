@@ -1,110 +1,185 @@
+/* Genel Stil Yapılandırması */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body { 
-    margin: 0; padding: 0; 
-    /* Arka planı tamamen beyaza yakın tatlı bir pembe yapıyoruz */
-    background-color: #fff5f8; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #6b4c58; 
-    overflow: hidden;
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff9fb;
+    color: #4a4a4a;
+    line-height: 1.7;
 }
 
-.tv-screen {
-    width: 100vw; height: 100vh;
-    /* Imgur linki kaldırıldı. Yerine tatlı, sakin, yumuşak bir degrade eklendi. */
-    background: radial-gradient(circle at center, #ffffff 0%, #ffeaf2 100%);
-    position: absolute; z-index: -1;
-    /* Filtrelere gerek kalmadı, kaldırıldı */
+/* Üst Menü Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe3ec;
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+    border-bottom: 3px solid #ffd1dc;
 }
 
-.scanlines {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    /* Scanline'ları daha belirgin ama yumuşak pembe tonlarda yapıyoruz */
-    background: linear-gradient(rgba(255, 192, 203, 0) 50%, rgba(209, 107, 165, 0.05) 50%);
-    background-size: 100% 4px; 
-    pointer-events: none;
-    z-index: 1;
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #d8698b;
 }
 
-.box { 
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 40px; 
-    border: 2px solid #ffb7c5; 
-    text-align: center; 
-    z-index: 2;
-    box-shadow: 0 10px 30px rgba(209, 107, 165, 0.2);
-    border-radius: 25px;
-    /* Titreme efektini biraz daha yavaş ve sakin hale getirdik */
-    animation: soft-flicker 4s infinite;
+.lang-switch button {
+    background-color: #ffffff;
+    border: 2px solid #ffb6c1;
+    color: #d8698b;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
-h1 { 
-    margin: 0 0 15px 0; 
-    letter-spacing: 2px; 
-    font-size: 2.5rem; 
-    color: #c7618e; /* Daha canlı ama tatlı bir başlık rengi */
-    text-shadow: 1px 1px 0px #ffdae5;
+.lang-switch button.active, .lang-switch button:hover {
+    background-color: #ffb6c1;
+    color: #ffffff;
 }
 
-.box p {
-    color: #8c6775;
-    font-size: 1.1rem;
+/* Ana Düzen (Sidebar + Content) */
+.main-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+/* Sol Taraf: Bölümler Menüsü */
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    border: 2px solid #ffeef2;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #d8698b;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
     margin-bottom: 10px;
 }
 
-@keyframes soft-flicker {
-    0% { opacity: 0.98; }
-    50% { opacity: 1; transform: scale(1.001); }
-    100% { opacity: 0.98; }
-}
-
-/* Ana siteye dönüş butonu tasarımı */
-.btn-home {
-    display: inline-block;
-    margin: 25px 0;
-    padding: 12px 24px;
-    background: #ffedf3;
-    color: #b5537d;
-    border: 2px solid #ffb7c5;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 50px; /* Tam yuvarlak buton */
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.btn-home:hover {
-    background: #ffb7c5;
-    color: white;
-    box-shadow: 0 4px 15px rgba(209, 107, 165, 0.3);
-}
-
-/* Lisans metni tasarımı */
-.license {
-    margin-top: 30px;
-    font-size: 0.75rem;
-    color: #a37081;
-    line-height: 1.6;
-    border-top: 1px solid #ffeaf2;
-    padding-top: 15px;
-}
-
-.license a {
-    color: #d16ba5;
-    text-decoration: none;
+.chapter-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #fff5f8;
+    color: #6c5ce7;
+    border-radius: 12px;
+    text-align: left;
     font-weight: 700;
-    border-bottom: 1px dashed #d16ba5;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
 }
 
-.license a:hover {
-    border-bottom: 1px solid #d16ba5;
-    background-color: #ffeaf2;
+.chapter-btn:hover {
+    background-color: #ffe3ec;
+}
+
+.chapter-btn.active {
+    background-color: #b8e994;
+    color: #2e7d32;
+}
+
+/* Sağ Taraf: Metin Okuma Alanı */
+.content-area {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+    border: 2px solid #ffeef2;
+}
+
+.chapter-content h1 {
+    color: #6c5ce7;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-bottom: 2px dashed #ffe3ec;
+    padding-bottom: 10px;
+}
+
+.story-text p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.story-text strong {
+    color: #d8698b;
+}
+
+.sound-effect, .narrative {
+    color: #888;
+    font-style: italic;
+}
+
+.chapter-end {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+/* Coming Soon Kartı */
+.coming-soon-box {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff5f8;
+    border-radius: 15px;
+    border: 2px dashed #ffb6c1;
+}
+
+.coming-soon-box h2 {
+    color: #d8698b;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.coming-soon-box p {
+    color: #777;
+}
+
+.sparkle {
+    font-size: 2rem;
+}
+
+/* Gizleme Sınıfı */
+.hidden {
+    display: none;
+}
+
+/* Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
 }
