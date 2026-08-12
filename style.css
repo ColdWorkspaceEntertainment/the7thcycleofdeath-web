@@ -183,3 +183,15 @@ body {
         width: 100%;
     }
 }
+
+/* Alt Bilgi (Footer) Stili */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #ffe3ec;
+    border-top: 3px solid #ffd1dc;
+    color: #d8698b;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
