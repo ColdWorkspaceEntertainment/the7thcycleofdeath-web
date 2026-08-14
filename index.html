@@ -132,21 +132,110 @@
                 </div>
             </article>
 
-            <!-- BÖLÜM 2 (COMING SOON) -->
-            <article id="chapter-2" class="chapter-content hidden">
-                <h1 data-tr="2. Bölüm" data-en="Chapter 2">2. Bölüm</h1>
-                <div class="coming-soon-box">
-                    <div class="sparkle">✨ 🐾 ✨</div>
-                    <h2>COMING SOON</h2>
-                    <p data-tr="Bu bölüm henüz hazır değil, çok yakında gelecekle takipte kalın!" 
-                       data-en="This chapter is not ready yet, coming very soon stay tuned!">
-                        Bu bölüm henüz hazır değil, çok yakında gelecekle takipte kalın!
-                    </p>
-                </div>
-            </article>
+        <!-- ============================================== -->
+<!-- 1) SIDEBAR BUTONUNU GÜNCELLE                    -->
+<!-- Eski "Bölüm 2 (Çok Yakında)" butonunun yerine bunu koy: -->
+<!-- ============================================== -->
 
-        </main>
+<li>
+    <button class="chapter-btn" onclick="showChapter(2)" id="btn-ch2">
+        <span data-tr="Bölüm 2: Aşk Hisleri" data-en="Chapter 2: Feelings of Love">Bölüm 2: Aşk Hisleri</span>
+    </button>
+</li>
+
+
+<!-- ============================================== -->
+<!-- 2) "COMING SOON" KUTUSUNU SİL, YERİNE BUNU KOY  -->
+<!-- <article id="chapter-2" class="chapter-content hidden"> ... </article> -->
+<!-- bloğunun TAMAMINI aşağıdakiyle değiştir:        -->
+<!-- ============================================== -->
+
+<article id="chapter-2" class="chapter-content hidden">
+    <h1 data-tr="2. Bölüm: Aşk Hisleri" data-en="Chapter 2: Feelings of Love">2. Bölüm: Aşk Hisleri</h1>
+    <div class="story-text">
+
+        <p><strong>Abby:</strong> <span data-tr="tatlım uyan" data-en="wake up sweetie">tatlım uyan</span></p>
+        <p><strong>Abby:</strong> <span data-tr="Riley kalkar mısın? sabah oldu bebeğim" data-en="Riley will you get up? it's morning baby">Riley kalkar mısın? sabah oldu bebeğim</span></p>
+        <p><strong>Riley:</strong> <span data-tr="noldu aşkım..." data-en="what is it my love...">noldu aşkım...</span></p>
+        <p><strong>Abby:</strong> <span data-tr="balım bu gün sevgililer günü" data-en="honey today is Valentine's Day">balım bu gün sevgililer günü</span></p>
+        <p><strong>Abby:</strong> <span data-tr="yoksa kutlamayacak mısın?" data-en="or aren't you going to celebrate?">yoksa kutlamayacak mısın?</span></p>
+        <p><strong>Riley:</strong> <span data-tr="neden kutlamayayım tabiki kutlayacağım" data-en="why wouldn't I celebrate, of course I will">neden kutlamayayım tabiki kutlayacağım</span></p>
+        <p><strong>Abby:</strong> <span data-tr="yerim seni :3" data-en="you're so cute I could eat you up :3">yerim seni :3</span></p>
+        <p><strong>Abby:</strong> <span data-tr="hadi gel Lucia kahvaltıyı hazırlamış" data-en="come on, Lucia has made breakfast">hadi gel Lucia kahvaltıyı hazırlamış</span></p>
+
+        <p class="narrative" data-tr="(kahvaltı vakti)" data-en="(breakfast time)">(kahvaltı vakti)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="Lucia? sadece sucuk ekmek mi yaptın, evde bir şey kalmadı mı?" data-en="Lucia? did you only make sucuk bread, is there nothing left at home?">Lucia? sadece sucuk ekmek mi yaptın, evde bir şey kalmadı mı?</span></p>
+        <p><strong>Lucia:</strong> <span data-tr="malzeme yok markete de kimse gitmedi." data-en="there's no ingredients, and nobody went to the market either.">malzeme yok markete de kimse gitmedi.</span></p>
+        <p><strong>Riley:</strong> <span data-tr="ben giderim markete" data-en="I'll go to the market">ben giderim markete</span></p>
+        <p><strong>Abby:</strong> <span data-tr="hayır tatlım ben gideyim" data-en="no sweetie let me go">hayır tatlım ben gideyim</span></p>
+        <p><strong>Riley:</strong> <span data-tr="balım yorulma sen, ben giderim" data-en="honey don't wear yourself out, I'll go">balım yorulma sen, ben giderim</span></p>
+        <p><strong>Abby:</strong> <span data-tr="ben giderim!" data-en="I'll go!">ben giderim!</span></p>
+        <p><strong>Riley:</strong> <span data-tr="eee, tamam" data-en="eee, okay">eee, tamam</span></p>
+
+        <p class="narrative" data-tr="(Abby markete gider)" data-en="(Abby goes to the market)">(Abby markete gider)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="tamam plan iyi gidiyor" data-en="okay the plan is going well">tamam plan iyi gidiyor</span></p>
+        <p><strong>Abby:</strong> <span data-tr="ilk markete gideyim ardından Riley'ye bir çiçek ve hediye alırım" data-en="first let me hit the market, then I'll get Riley a flower and a gift">ilk markete gideyim ardından Riley'ye bir çiçek ve hediye alırım</span></p>
+
+        <p class="narrative" data-tr="(market alışverişi tamamlanır ve sıra hediyeye gelir)" data-en="(the grocery shopping is done and it's time for the gift)">(market alışverişi tamamlanır ve sıra hediyeye gelir)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="hmm, çiçekçi var mı burada ya" data-en="hmm, is there a florist around here">hmm, çiçekçi var mı burada ya</span></p>
+        <p><strong>Abby:</strong> <span data-tr="aha çiçekçi, pardon bir çiçek alabilir miyim?" data-en="aha a florist, excuse me could I buy a flower?">aha çiçekçi, pardon bir çiçek alabilir miyim?</span></p>
+        <p><strong>John:</strong> <span data-tr="tabiki, hangisini istersiniz?" data-en="of course, which one would you like?">tabiki, hangisini istersiniz?</span></p>
+        <p><strong>Abby:</strong> <span data-tr="sakura var mı? yoksa gül alayım" data-en="do you have sakura? otherwise I'll take a rose">sakura var mı? yoksa gül alayım</span></p>
+        <p><strong>John:</strong> <span data-tr="maalesef efendim elimizde sakura yok fakat gül verebilirim" data-en="unfortunately ma'am we don't have sakura, but I can give you a rose">maalesef efendim elimizde sakura yok fakat gül verebilirim</span></p>
+        <p><strong>Abby:</strong> <span data-tr="tamam bir gül alayım, kaç TL acaba" data-en="okay I'll take a rose, how much is it">tamam bir gül alayım, kaç TL acaba</span></p>
+        <p><strong>John:</strong> <span data-tr="bu gün sevgililer günü olduğu için ücretsiz veriyorum bizden olsun" data-en="since it's Valentine's Day, it's on the house, free of charge">bu gün sevgililer günü olduğu için ücretsiz veriyorum bizden olsun</span></p>
+        <p><strong>Abby:</strong> <span data-tr="teşekkürler." data-en="thank you.">teşekkürler.</span></p>
+
+        <p class="narrative" data-tr="(Abby eve gider ve Riley'ye hediyesini vermek için bekler)" data-en="(Abby goes home and waits to give Riley her gift)">(Abby eve gider ve Riley'ye hediyesini vermek için bekler)</p>
+
+        <p><strong>Riley:</strong> <span data-tr="Abby neden titriyorsun" data-en="Abby why are you shaking">Abby neden titriyorsun</span></p>
+        <p><strong>Abby:</strong> <span data-tr="titriyor muyum? farkında değilim" data-en="am I shaking? I hadn't noticed">titriyor muyum? farkında değilim</span></p>
+        <p><strong>Riley:</strong> <span data-tr="doğruyu söyle bir şey mi oldu?" data-en="tell me the truth, did something happen?">doğruyu söyle bir şey mi oldu?</span></p>
+        <p><strong>Abby:</strong> <span data-tr="daha fazla bekleyemeyeceğim..." data-en="I can't wait any longer...">daha fazla bekleyemeyeceğim...</span></p>
+        <p><strong>Abby:</strong> <span data-tr="sana gül almıştım bebeğim" data-en="I got you a rose baby">sana gül almıştım bebeğim</span></p>
+        <p><strong>Riley:</strong> <span data-tr="yaa teşekkür ederim tatlım :3" data-en="aww thank you sweetie :3">yaa teşekkür ederim tatlım :3</span></p>
+        <p><strong>Abby:</strong> <span data-tr="rica ederim bebeğim" data-en="you're welcome baby">rica ederim bebeğim</span></p>
+        <p><strong>Abby:</strong> <span data-tr="neyse tatlım ben dışarı çıkıyorum gezeceğim azıcık" data-en="anyway sweetie I'm heading out, going to walk around a bit">neyse tatlım ben dışarı çıkıyorum gezeceğim azıcık</span></p>
+        <p><strong>Riley:</strong> <span data-tr="tamam :3" data-en="okay :3">tamam :3</span></p>
+
+        <p class="narrative" data-tr="(Abby dışarı çıkar ve gezecek bir yer arar)" data-en="(Abby heads out and looks for somewhere to walk around)">(Abby dışarı çıkar ve gezecek bir yer arar)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="hmm, napabilirim" data-en="hmm, what could I do">hmm, napabilirim</span></p>
+        <p><strong>Abby:</strong> <span data-tr="taksi var mı acaba" data-en="I wonder if there's a taxi around">taksi var mı acaba</span></p>
+        <p><strong>Abby:</strong> <span data-tr="şuraya oturayım biraz" data-en="let me sit here for a bit">şuraya oturayım biraz</span></p>
+
+        <p class="narrative" data-tr="(15 dakika sonra)" data-en="(15 minutes later)">(15 dakika sonra)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="ha, aa taksi" data-en="oh, a taxi">ha, aa taksi</span></p>
+        <p><strong>Abby:</strong> <span data-tr="pardon, müsait mi?" data-en="excuse me, are you free?">pardon, müsait mi?</span></p>
+        <p><strong>????:</strong> <span data-tr="evet müsait" data-en="yes, I'm free">evet müsait</span></p>
+        <p><strong>Abby:</strong> <span data-tr="tamamdır" data-en="alright">tamamdır</span></p>
+
+        <p class="narrative" data-tr="(Abby taksiye biner)" data-en="(Abby gets into the taxi)">(Abby taksiye biner)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="****** gideceğim" data-en="I need to go to ******">****** gideceğim</span></p>
+        <p><strong>????:</strong> <span data-tr="tamamdır efendim." data-en="alright ma'am.">tamamdır efendim.</span></p>
+
+        <p class="narrative" data-tr="(konuma gelirler)" data-en="(they arrive at the location)">(konuma gelirler)</p>
+
+        <p><strong>Abby:</strong> <span data-tr="teşekkür ederim, ne kadar tuttu?" data-en="thank you, how much do I owe you?">teşekkür ederim, ne kadar tuttu?</span></p>
+        <p><strong>????:</strong> <span data-tr="120 TL yeterli" data-en="120 TL is enough">120 TL yeterli</span></p>
+        <p><strong>Abby:</strong> <span data-tr="buyrun" data-en="here you go">buyrun</span></p>
+        <p><strong>????:</strong> <span data-tr="pardon, bir bakar mısın" data-en="excuse me, could you look here a second">pardon, bir bakar mısın</span></p>
+        <p><strong>Abby:</strong> <span data-tr="efendim" data-en="yes?">efendim</span></p>
+        <p><strong>????:</strong> <span data-tr="benim adım Tony özel bir görevdeyim" data-en="my name is Tony, I'm on a special mission">benim adım Tony özel bir görevdeyim</span></p>
+        <p><strong>Tony:</strong> <span data-tr="şehre bir kaç saat önce bir meteor düştü onu incelemek için görevlendirildim" data-en="a meteor fell on the city a few hours ago, I was assigned to investigate it">şehre bir kaç saat önce bir meteor düştü onu incelemek için görevlendirildim</span></p>
+        <p><strong>Tony:</strong> <span data-tr="bu kartı alın bir şey olursa ve ya görürseniz arayın." data-en="take this card, and call if anything happens or if you see anything.">bu kartı alın bir şey olursa ve ya görürseniz arayın.</span></p>
+        <p><strong>Abby:</strong> <span data-tr="tamam, teşekkürler...." data-en="okay, thank you....">tamam, teşekkürler....</span></p>
+        <p><strong>Abby:</strong> <span data-tr="bu ne ya?" data-en="what is this?">bu ne ya?</span></p>
+
+        <div class="chapter-end" data-tr="2. Bölüm Sonu" data-en="End of Chapter 2">2. Bölüm Sonu</div>
     </div>
+</article>
+
 
     <!-- Alt Bilgi (Footer) -->
     <footer class="site-footer">
